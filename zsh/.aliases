@@ -9,6 +9,9 @@ L I N G' -v Alex"
 ## ensure . works as source
 alias .=source
 
+## strip the annoying newline when using pbcopy
+alias pbcopy="tr -d '\n' | pbcopy"
+
 ## replace rm with trash # see: https://github.com/sindresorhus/trash-cli
 alias rm=trash
 
