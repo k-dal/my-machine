@@ -1,0 +1,38 @@
+## commands with preferred args
+alias la="gls --color=auto --group-directories-first -FAhl"
+alias ls="gls --color=auto --group-directories-first -Fhl"
+alias nano="nano -EMacilu$ -T 4"
+alias timer="/Users/kd/.venv/_termdown/bin/termdown -b -c 15 -q 300 -t 'D I N G
+      A
+L I N G' -v Alex"
+
+## ensure . works as source
+alias .=source
+
+## replace rm with trash # see: https://github.com/sindresorhus/trash-cli
+alias rm=trash
+
+## get current ip address info
+alias ipinfo="echo && curl ipinfo.io && echo && echo"
+
+## cleaner exit behavior for Terminal.app
+_quit_terminal_if_exiting_last_window() {
+  if (( ${+TMUX} )); then
+    exit
+  else
+    osascript -e 'tell application "Terminal"
+      if (get window count) <= 1 then
+        close window 1
+        quit
+      else
+        close window 1
+      end if
+    end tell'
+  fi
+}
+alias exit=_quit_terminal_if_exiting_last_window
+alias e=exit
+alias q=exit
+
+## create private aliases
+source $HOME/._aliases
