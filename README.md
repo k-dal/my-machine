@@ -1,1 +1,1 @@
-Various codes and configurations that make my machine feel like home.
+The odds and ends that make my machine feel like home.
