@@ -1,0 +1,36 @@
+{
+    "always_show_minimap_viewport": true,
+    "bold_folder_labels": true,
+    "caret_extra_bottom": 0,
+    "caret_extra_top": 0,
+    "caret_style": "blink",
+    "close_windows_when_empty": false,
+    "drag_text": false,
+    "enable_tab_scrolling": false,
+    "ensure_newline_at_eof_on_save": true,
+    "find_selected_text": true,
+    "font_face": "JetBrains Mono",
+    "font_size": 13,
+    "highlight_modified_tabs": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "indent_guide_options":
+    [
+        "draw_active"
+    ],
+    "indent_to_bracket": true,
+    "match_brackets_angle": true,
+    "rulers":
+    [
+        100
+    ],
+    "shift_tab_unindent": true,
+    "show_encoding": true,
+    "show_full_path": true,
+    "show_line_endings": true,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "word_wrap": true
+}
