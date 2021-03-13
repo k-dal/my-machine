@@ -1,6 +1,6 @@
 export PIP_REQUIRE_VIRTUALENV=true
 
-## python virtualenvwrapper env vars
+## virtualenvwrapper env vars
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV=true
 export VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/shims/python
 export WORKON_HOME=$HOME/.venv

@@ -5,6 +5,9 @@ alias nano="nano -EMacilu$ -T 4"
 alias timer="$HOME/.venv/_termdown/bin/termdown -b -c 15 -q 300 -t 'D I N G
       A
 L I N G' -v Alex"
+alias tasktimer="$HOME/.venv/_termdown/bin/termdown -b -c 15 -q 300 -t 'D I N G
+      A
+L I N G' -v Alex -T"
 
 ## ensure . works as source
 alias .=source
@@ -17,6 +20,12 @@ alias rm=trash
 
 ## get current ip address info
 alias ipinfo="echo && curl ipinfo.io && echo && echo"
+
+## send a notification when the process has finished
+,notify_when_done() {
+  command=$1; shift; eval "$command $@";
+  terminal-notifier -title "All Done" -message "$command command has finished processing." -sound default -activate com.apple.Terminal
+}
 
 ## cleaner exit behavior for Terminal.app
 _quit_terminal_if_exiting_last_window() {
