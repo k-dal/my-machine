@@ -1,0 +1,6 @@
+[
+  { "keys": ["ctrl+shift+d"], "command": "file_diff_menu" },
+  { "keys": ["ctrl+shift+e"], "command": "file_diff_menu", "args": {"cmd": ["meld", "$file1", "$file2"] } },
+  { "keys": ["ctrl+shift+b"], "command": "black_file" },
+  { "keys": ["ctrl+alt+shift+b"], "command": "black_diff" }
+]

@@ -24,7 +24,7 @@
     "match_brackets_angle": true,
     "rulers":
     [
-        100
+        88
     ],
     "shift_tab_unindent": true,
     "show_encoding": true,

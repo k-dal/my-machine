@@ -1,0 +1,14 @@
+# C0114: Missing module docstring (missing-module-docstring)
+# C0116: Missing function or method docstring (missing-function-docstring)
+# E0401: Unable to import (import-error)
+
+#### -(( Black-Pylint Config ))-
+#### -(( START ))-
+# https://black.readthedocs.io/en/stable/compatible_configs.html?highlight=pylint
+[MESSAGES CONTROL]
+disable = C0330, C0326, C0114, C0116, E0401
+
+[format]
+max-line-length = 88
+#### -(( Black-Pylint Config ))-
+#### -(( END ))-

@@ -1,0 +1,11 @@
+// SublimeLinter Settings - User
+{
+    "lint_mode": "load_save",
+    "linters": {
+        "pylint": {
+            "executable": "$HOME/.pyenv/shims/pylint",
+            "filter_errors": ["E0401", "C0114", "C0116"]
+        }
+    },
+    "no_column_highlights_line": true
+}
