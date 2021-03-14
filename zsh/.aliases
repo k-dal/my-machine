@@ -1,7 +1,12 @@
 ## commands with preferred args
+alias blk=black
+alias blk_check="blk --check"
+alias blk_diff_color="blk --diff --color"
+alias blk_diff_no-color="black --diff --no-color"
 alias la="gls --color=auto --group-directories-first -FAhl"
 alias ls="gls --color=auto --group-directories-first -Fhl"
 alias nano="nano -EMacilu$ -T 4"
+alias pylint="pylint -f colorized"
 alias timer="$HOME/.venv/_termdown/bin/termdown -b -c 15 -q 300 -t 'D I N G
       A
 L I N G' -v Alex"
