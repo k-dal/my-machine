@@ -20,6 +20,10 @@ alias .=source
 ## strip the annoying newline when using pbcopy
 alias pbcopy="tr -d '\n' | pbcopy"
 
+## uuid convenience functions
+alias ,uuid-gen="uuidgen | tr '[:upper:]' '[:lower:]'"
+alias ,cp-uuid-gen=",uuid-gen | pbcopy"
+
 ## replace rm with trash # see: https://github.com/sindresorhus/trash-cli
 alias rm=trash
 
