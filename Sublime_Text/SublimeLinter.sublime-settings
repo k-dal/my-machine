@@ -3,8 +3,12 @@
     "lint_mode": "load_save",
     "linters": {
         "pylint": {
-            "executable": "$HOME/.pyenv/shims/pylint",
-            "filter_errors": ["E0401", "C0114", "C0116"]
+            "disable": true,
+            "executable": "$HOME/.pyenv/shims/pylint"
+        },
+        "flake8": {
+            "disable": false,
+            "executable": "$HOME/.pyenv/shims/flake8"
         }
     },
     "no_column_highlights_line": true

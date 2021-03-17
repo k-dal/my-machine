@@ -1,35 +1,30 @@
 {
     "always_show_minimap_viewport": true,
+    "auto_find_in_selection": true,
     "bold_folder_labels": true,
-    "caret_extra_bottom": 0,
-    "caret_extra_top": 0,
-    "caret_style": "blink",
     "close_windows_when_empty": false,
+    "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.sublime-color-scheme",
+    "default_line_ending": "unix",
     "drag_text": false,
+    "enable_hexadecimal_encoding": false,
     "enable_tab_scrolling": false,
     "ensure_newline_at_eof_on_save": true,
-    "find_selected_text": true,
+    "fade_fold_buttons": false,
     "font_face": "JetBrains Mono",
     "font_size": 13,
     "highlight_modified_tabs": true,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "indent_guide_options":
-    [
-        "draw_active"
-    ],
+    "ignored_packages":["Vintage"],
     "indent_to_bracket": true,
-    "match_brackets_angle": true,
-    "rulers":
-    [
-        88
-    ],
+    "margin": 0,
+    "mini_diff": "auto",
+    "move_to_limit_on_up_down": false,
+    "native_tabs": "disabled",
+    "overlay_scroll_bars": "enabled",
+    "rulers": [99],
     "shift_tab_unindent": true,
     "show_encoding": true,
-    "show_full_path": true,
-    "show_line_endings": true,
+    "show_tab_close_buttons": false,
+    "theme": "Adaptive.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": true

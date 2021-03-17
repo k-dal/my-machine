@@ -1,4 +1,5 @@
 ## commands with preferred args
+alias black="black --line-length=99"
 alias blk=black
 alias blk_check="blk --check"
 alias blk_diff_color="blk --diff --color"
