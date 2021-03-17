@@ -2,7 +2,7 @@
     "always_show_minimap_viewport": true,
     "auto_find_in_selection": true,
     "bold_folder_labels": true,
-    "close_windows_when_empty": false,
+    "close_windows_when_empty": true,
     "color_scheme": "Packages/Theme - Gravity/Monokai Gravity.sublime-color-scheme",
     "default_line_ending": "unix",
     "drag_text": false,
