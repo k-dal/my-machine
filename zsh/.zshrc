@@ -68,7 +68,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages copydir copyfile mosh safe-paste virtualenvwrapper)  # per-directory-history
+plugins=(colored-man-pages copydir mosh safe-paste virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
