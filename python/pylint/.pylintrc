@@ -3,10 +3,11 @@
 [MESSAGES CONTROL]
 # C0114: Missing module docstring (missing-module-docstring)
 # C0116: Missing function or method docstring (missing-function-docstring)
+# C0301: Line too long (<line-length>/<max-line-length>) (line-too-long)  # unnecessary as black handles code formatting and line length
 # C0326: C0326: Bad whitespace
 # C0330: C0330: Wrong hanging indentation before block (add 4 spaces)
 # E0401: Unable to import (import-error)
-disable = C0114, C0116, C0326, C0330, E0401
+disable = C0114, C0116, C0301, C0326, C0330, E0401
 
 [FORMAT]
 max-line-length = 99

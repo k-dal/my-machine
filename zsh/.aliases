@@ -14,19 +14,19 @@ alias pylint="pylint -f colorized"
 alias ipinfo="echo && curl ipinfo.io && echo && echo"
 
 ## strip the annoying newline when using pbcopy
-alias pbcopy="tr -d '\n' | pbcopy"
+alias ,pbcopy="tr -d '\n' | pbcopy"
 
 ## replace rm with trash # see: https://github.com/sindresorhus/trash-cli
 alias rm=trash
 
 ## uuid convenience functions
 alias ,uuid-gen="uuidgen | tr '[:upper:]' '[:lower:]'"
-alias ,uuid=",uuid-gen | pbcopy"
-alias ,suuid-gen="$HOME/.venv/.zsh_aliases/bin/python -c 'from shortuuid import uuid; print(uuid())'"
-alias ,suuid=",suuid-gen | pbcopy"
+alias ,uuid=",uuid-gen | ,pbcopy"
+alias ,suuid-gen="$HOME/.venv/.zsh/bin/python -c 'from shortuuid import uuid; print(uuid())'"
+alias ,suuid=",suuid-gen | ,pbcopy"
 
 ## timers courtesy of termdown
-alias termdown="$HOME/.venv/.zsh_aliases/bin/termdown -b -c 10 -f roman -q 3 -t \"D I N G
+alias termdown="$HOME/.venv/.zsh/bin/termdown -b -c 10 -f roman -q 3 -t \"D I N G
       A
 L I N G\" -v Alex"
 timer() {
