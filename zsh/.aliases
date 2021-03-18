@@ -1,4 +1,5 @@
 ## commands with preferred args
+alias .=source
 alias black="black --line-length=99"
 alias blk=black
 alias blk_check="blk --check"
@@ -8,33 +9,42 @@ alias la="gls --color=auto --group-directories-first -FAhl"
 alias ls="gls --color=auto --group-directories-first -Fhl"
 alias nano="nano -EMacilu$ -T 4"
 alias pylint="pylint -f colorized"
-alias timer="$HOME/.venv/_termdown/bin/termdown -b -c 15 -q 300 -t 'D I N G
-      A
-L I N G' -v Alex"
-alias tasktimer="$HOME/.venv/_termdown/bin/termdown -b -c 15 -q 300 -t 'D I N G
-      A
-L I N G' -v Alex -T"
-
-## ensure . works as source
-alias .=source
-
-## strip the annoying newline when using pbcopy
-alias pbcopy="tr -d '\n' | pbcopy"
-
-## uuid convenience functions
-alias ,uuid-gen="uuidgen | tr '[:upper:]' '[:lower:]'"
-alias ,cp-uuid-gen=",uuid-gen | pbcopy"
-
-## replace rm with trash # see: https://github.com/sindresorhus/trash-cli
-alias rm=trash
 
 ## get current ip address info
 alias ipinfo="echo && curl ipinfo.io && echo && echo"
 
-## send a notification when the process has finished
+## strip the annoying newline when using pbcopy
+alias pbcopy="tr -d '\n' | pbcopy"
+
+## replace rm with trash # see: https://github.com/sindresorhus/trash-cli
+alias rm=trash
+
+## uuid convenience functions
+alias ,uuid-gen="uuidgen | tr '[:upper:]' '[:lower:]'"
+alias ,uuid=",uuid-gen | pbcopy"
+alias ,suuid-gen="$HOME/.venv/zsh_aliases/bin/python -c 'from shortuuid import uuid; print(uuid())'"
+alias ,suuid=",suuid-gen | pbcopy"
+
+## timers courtesy of termdown
+alias termdown="$HOME/.venv/zsh_aliases/bin/termdown -b -c 10 -f roman -q 3 -t \"D I N G
+      A
+L I N G\" -v Alex"
+timer() {
+    termdown $1 && ,send_system_notification "Timer Complete" "Total Runtime: $1"
+}
+ttimer() {
+    termdown -T $1 $2 && ,send_system_notification $1 "Total Runtime: $2"
+}
+
+## send a notification when the associated process has finished
 ,notify_when_done() {
   command=$1; shift; eval "$command $@";
-  terminal-notifier -title "All Done" -message "$command command has finished processing." -sound default -activate com.apple.Terminal
+  terminal-notifier -title "~ ⫷⫸  $command" -message "::: Complete :::" -sound default -activate com.apple.Terminal
+}
+
+## send an arbitrary system notification
+,send_system_notification() {
+  terminal-notifier -title "⫷(( ${1} ))⫸" -message $2 -sound default -activate com.apple.Terminal
 }
 
 ## cleaner exit behavior for Terminal.app
