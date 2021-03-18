@@ -4,11 +4,11 @@
     "linters": {
         "pylint": {
             "disable": true,
-            "executable": "$HOME/.pyenv/shims/pylint"
+            "executable": "$HOME/.venv/.linters/bin/pylint"
         },
         "flake8": {
             "disable": false,
-            "executable": "$HOME/.pyenv/shims/flake8"
+            "executable": "$HOME/.venv/.linters/bin/flake8"
         }
     },
     "no_column_highlights_line": true
