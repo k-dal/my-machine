@@ -2,8 +2,8 @@ export PIP_REQUIRE_VIRTUALENV=true
 
 ## virtualenvwrapper env vars
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV=true
-export VIRTUALENVWRAPPER_PYTHON=$HOME/.pyenv/shims/python
-export WORKON_HOME=$HOME/.venv
+export VIRTUALENVWRAPPER_PYTHON=~/.pyenv/shims/python
+export WORKON_HOME=~/.venv
 
 ## When possible, use Sublime Text as the editor for commands that prompt for input.
 ## see: https://www.sublimetext.com/docs/3/osx_command_line.html

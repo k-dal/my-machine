@@ -48,7 +48,7 @@ fi
 
 ## commands with my preferred flags
 alias .=source
-alias black="$HOME/.venv/.zsh/bin/black --line-length=99"
+alias black="~/.venv/.zsh/bin/black --line-length=99"
 alias blk=black
 alias blk_check="blk --check"
 alias blk_diff_color="blk --diff --color"
@@ -66,11 +66,11 @@ alias rm=trash
 ## uuid convenience functions
 alias uuidgen="uuidgen lower"
 alias uuid="uuidgen cat-lscopy"
-alias suuidgen="$HOME/.venv/.zsh/bin/python -c 'from shortuuid import uuid; print(uuid())'"
+alias suuidgen="~/.venv/.zsh/bin/python -c 'from shortuuid import uuid; print(uuid())'"
 alias suuid="suuidgen cat-scopy"
 
 ## timers courtesy of termdown
-alias termdown="$HOME/.venv/.zsh/bin/termdown -b -c 10 -f roman -q 3 -t \"D I N G
+alias termdown="~/.venv/.zsh/bin/termdown -b -c 10 -f roman -q 3 -t \"D I N G
       A
 L I N G\" -v Alex"
 timer() {
@@ -111,4 +111,4 @@ alias e=exit
 alias q=exit
 
 ## create private aliases
-source $HOME/._aliases
+source ~/._aliases

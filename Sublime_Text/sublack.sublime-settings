@@ -1,4 +1,4 @@
 {
-    "black_command": "/Users/kd/.venv/.linters/bin/black",
+    "black_command": "~/.venv/.linters/bin/black",
     "black_line_length": 99
 }
