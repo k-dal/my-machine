@@ -1,0 +1,23 @@
+[flake8]
+extend-ignore = E111,
+                  # -(( E111 ))- Indentation is not a multiple of four
+                E203,
+                  # -(( E203 ))- whitespace before ':'
+                E501,
+                  # -(( E501 ))- line too long ([line-length] > [max-line-length] characters)
+                  # This one's irrelevant since cblack manages line length
+                F0001,
+                  # -(( F0001 ))- No module named stdin (fatal)
+                  # This is a red herring/non-issue. It happens when SublimeLinter-flake8 uses
+                  # stdin in a way that's incompatible with Bandit.
+                TYO101,
+                  # -(( TYO101 ))- Move third-party import into a type-checking block
+                  # Per the docs, this is only really relevant when you're trying to squeeze every
+                  # last microsecond out of the process.
+                W503
+                  # -(( W503 ))- Line break before binary operator
+                  # This one conflicts with modern PEP-8. It'll eventually be fixed, but for now
+                  # it's simplest to ignore it.
+import-order-style = spoqa
+inline-quotes = "
+max-line-length = 99

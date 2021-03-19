@@ -1,13 +1,17 @@
-#### -(( Black-Pylint Config ))- https://black.readthedocs.io/en/stable/compatible_configs.html?highlight=pylint
-
 [MESSAGES CONTROL]
-# C0114: Missing module docstring (missing-module-docstring)
-# C0116: Missing function or method docstring (missing-function-docstring)
-# C0301: Line too long (<line-length>/<max-line-length>) (line-too-long)  # unnecessary as black manages line length
-# C0326: C0326: Bad whitespace
-# C0330: C0330: Wrong hanging indentation before block (add 4 spaces)
-# E0401: Unable to import (import-error)
-disable = C0114, C0116, C0301, C0326, C0330, E0401
+disable = C0114,
+            # -(( C0114 ))- Missing module docstring (missing-module-docstring)
+          C0116,
+            # -(( C0116 ))- Missing function or method docstring (missing-function-docstring)
+          C0301,
+            # -(( C0301 ))- Line too long (<line-length>/<max-line-length>) (line-too-long)
+            # This one's irrelevant since cblack manages line length
+          C0326,
+            # -(( C0326 ))- Bad whitespace
+          C0330,
+            # -(( C0330 ))- Wrong hanging indentation before block (add 4 spaces)
+          E0401
+            # -(( E0401 ))- Unable to import (import-error)
 
 [FORMAT]
 indent-after-paren = 2
@@ -16,7 +20,8 @@ max-line-length = 99
 
 [BASIC]
 # Good variable names which should always be accepted, separated by a comma.
-good-names=e,
+good-names=_,
+           e,
            i,
            j,
            k,
@@ -24,13 +29,12 @@ good-names=e,
            el,
            ex,
            ix,
-           Run,
-           _
+           idx
 
 # List of comma separated words that should not be checked.
-spelling-ignore-words=ruchomi,
+spelling-ignore-words=dalias,
                       eavedata,
-                      dalias
+                      ruchomi
 
 [MISCELLANEOUS]
 # List of note tags to take in consideration, separated by a comma.
