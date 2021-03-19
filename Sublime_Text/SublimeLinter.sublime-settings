@@ -2,13 +2,17 @@
 {
     "lint_mode": "load_save",
     "linters": {
-        "pylint": {
-            "disable": true,
-            "executable": "~/.venv/.linters/bin/pylint"
+        "bandit": {
+            "disable": false,
+            "executable": "~/.venv/.linters/bin/bandit"
         },
         "flake8": {
             "disable": false,
             "executable": "~/.venv/.linters/bin/flake8"
+        },
+        "pylint": {
+            "disable": true,
+            "executable": "~/.venv/.linters/bin/pylint"
         }
     },
     "no_column_highlights_line": true
