@@ -10,6 +10,8 @@
 disable = C0114, C0116, C0301, C0326, C0330, E0401
 
 [FORMAT]
+indent-after-paren = 2
+indent-string = "  "
 max-line-length = 99
 
 [BASIC]

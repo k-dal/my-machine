@@ -5,4 +5,5 @@
 # E501: line too long ([line-length] > [max-line-length] characters)  # unnecessary as black manages line length
 # W503: line break before binary operator
 extend-ignore = E203, E501, W503
+indent-size = 2
 max-line-length = 99
