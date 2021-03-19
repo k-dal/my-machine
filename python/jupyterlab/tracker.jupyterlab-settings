@@ -1,0 +1,30 @@
+{
+    "codeCellConfig": {
+        "fontFamily": "JetBrains Mono",
+        "fontSize": 12,
+        "lineHeight": 1.2,
+        "lineNumbers": true,
+        "lineWrap": "on",
+        "rulers": [99, 119],
+        "codeFolding": true,
+        "tabSize": 2,
+    },
+    "markdownCellConfig": {
+        "fontFamily": "JetBrains Mono",
+        "fontSize": 12,
+        "lineHeight": 1.2,
+        "lineNumbers": true,
+        "lineWrap": "on",
+        "rulers": [99, 119],
+        "codeFolding": true,
+    },
+    "rawCellConfig": {
+        "fontFamily": "JetBrains Mono",
+        "fontSize": 12,
+        "lineHeight": 1.2,
+        "lineNumbers": true,
+        "lineWrap": "on",
+        "rulers": [99, 119],
+        "codeFolding": true,
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "shortcuts": [
+        {
+            "command": "kernelmenu:restart-and-clear",
+            "keys": [
+                "Ctrl Shift R"
+            ],
+            "selector": ".jp-Activity"
+        },
+        {
+            "command": "documentsearch:start",
+            "keys": [
+                "Accel F"
+            ],
+            "selector": ".jp-mod-searchable",
+            "disabled": true
+        }
+    ]
+}
