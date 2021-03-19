@@ -1,0 +1,60 @@
+/* URLs Starting With: https://anvil.works/build# */
+body {
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+div h2 {
+    display: none;
+}
+
+.CodeMirror pre {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.actions-list {
+    display: none;
+}
+
+.create-app {
+    display: none;
+}
+
+.ide-main-panel {
+    padding: 0px;
+}
+
+.ide-main-panel.with-sidebar {
+    left: 25%;
+}
+
+.learn-to-use {
+    display: none;
+}
+
+.page-container {
+    padding: 0px;
+    top: 55px;
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+[app-browser] {
+    width: 25%;
+    padding: 0px;
+}
+
+[form-editor]:not(.full-screen) .main-panel {
+    padding-right: 0px;
+    right: 30%;
+}
+
+[form-editor]:not(.full-screen) .anvil-right-column-scroller {
+    padding-left: 0px;
+    left: 70%;
+    width: 30%;
+}
