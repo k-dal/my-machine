@@ -10,6 +10,9 @@ extend-ignore = E111,
                   # -(( F0001 ))- No module named stdin (fatal)
                   # This is a red herring/non-issue. It happens when SublimeLinter-flake8 uses
                   # stdin in a way that's incompatible with Bandit.
+                Q000,
+                  # -(( Q000 ))- Remove bad quotes
+                  # It just doesn't like double quotes, but black does.
                 TYO101,
                   # -(( TYO101 ))- Move third-party import into a type-checking block
                   # Per the docs, this is only really relevant when you're trying to squeeze every
