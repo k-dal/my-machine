@@ -5,17 +5,19 @@ disable = C0114,
             # -(( C0116 ))- Missing function or method docstring (missing-function-docstring)
           C0301,
             # -(( C0301 ))- Line too long (<line-length>/<max-line-length>) (line-too-long)
-            # This one's irrelevant since cblack manages line length
+            # This one's irrelevant since black manages line length
           C0326,
             # -(( C0326 ))- Bad whitespace
           C0330,
             # -(( C0330 ))- Wrong hanging indentation before block (add 4 spaces)
+          E0213,
+            # -(( E0213 ))- Method should have "self" as first argument (no-self-argument)
           E0401
             # -(( E0401 ))- Unable to import (import-error)
 
 [FORMAT]
-indent-after-paren = 2
-indent-string = "  "
+# indent-after-paren = 4
+indent-string = "    "
 max-line-length = 99
 
 [BASIC]

@@ -1,5 +1,9 @@
 [flake8]
-extend-ignore = E111,
+extend-ignore = C812,
+                  # -(( C812 ))- Missing trailing comma - ignored because Black is making these decisions
+                D101,
+                  # -(( D101 ))- Missing Docstring in Public Class
+                E111,
                   # -(( E111 ))- Indentation is not a multiple of four
                 E203,
                   # -(( E203 ))- whitespace before ':'
@@ -17,10 +21,13 @@ extend-ignore = E111,
                   # -(( TYO101 ))- Move third-party import into a type-checking block
                   # Per the docs, this is only really relevant when you're trying to squeeze every
                   # last microsecond out of the process.
-                W503
+                W503,
                   # -(( W503 ))- Line break before binary operator
                   # This one conflicts with modern PEP-8. It'll eventually be fixed, but for now
                   # it's simplest to ignore it.
+                WPS305
+                  # -(( WPS305 ))- Found 'f' string - uh yea, because they're great...
+
 import-order-style = spoqa
 inline-quotes = "
 max-line-length = 99
