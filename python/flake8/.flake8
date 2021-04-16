@@ -29,5 +29,6 @@ extend-ignore = C812,
                   # -(( WPS305 ))- Found 'f' string - uh yea, because they're great...
 
 import-order-style = spoqa
+indent-size = 2
 inline-quotes = "
 max-line-length = 99

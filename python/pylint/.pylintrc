@@ -17,7 +17,7 @@ disable = C0114,
 
 [FORMAT]
 # indent-after-paren = 4
-indent-string = "    "
+indent-string = "  "
 max-line-length = 99
 
 [BASIC]
