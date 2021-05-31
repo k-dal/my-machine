@@ -26,7 +26,7 @@
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
-		111
+		99, 119
 	],
 	"shift_tab_unindent": true,
 	"show_encoding": true,

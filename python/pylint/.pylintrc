@@ -18,7 +18,7 @@ disable = C0114,
 [FORMAT]
 # indent-after-paren = 4
 indent-string = "  "
-max-line-length = 111
+max-line-length = 119
 
 [BASIC]
 # Good variable names which should always be accepted, separated by a comma.
@@ -35,12 +35,33 @@ good-names=_,
 
 # List of comma separated words that should not be checked.
 spelling-ignore-words=dalias,
+                      datascienceretreat,
+                      dsr,
                       eavedata,
-                      ruchomi
+                      ruchomi,
+                      sainaptic,
+                      snp
 
 [MISCELLANEOUS]
 # List of note tags to take in consideration, separated by a comma.
 notes=BUG,
+      CAVEAT,
+      CRED,
+      DOCUMENT,
+      FAQ,
       FIXME,
+      GOTCHA,
+      HACK,
+      IDEA,
+      NEEDSDOC,
       NEXT,
-      TODO
+      NOTE,
+      QUESTION,
+      REQ,
+      SEE,
+      THANKS,
+      TODO,
+      TY,
+      WONTFIX,
+      !!!,
+      ???

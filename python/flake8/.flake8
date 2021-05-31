@@ -15,6 +15,9 @@ extend-ignore = C812,
                 Q000,
                   # -(( Q000 ))- Remove bad quotes
                   # It just doesn't like double quotes, but black does.
+                S101,
+                  # -(( S101 ))- AKA Bandit's B101 - Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+                  # More info on why this may be a problem here: https://bandit.readthedocs.io/en/latest/plugins/b101_assert_used.html
                 TYO101,
                   # -(( TYO101 ))- Move third-party import into a type-checking block
                   # Per the docs, this is only really relevant when you're trying to squeeze every
@@ -33,4 +36,4 @@ extend-ignore = C812,
 import-order-style = spoqa
 indent-size = 2
 inline-quotes = "
-max-line-length = 111
+max-line-length = 119
