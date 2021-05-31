@@ -99,10 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
 # #### pyenv begin #### #
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 # ####  pyenv end  #### #
 
 source $HOME/.aliases

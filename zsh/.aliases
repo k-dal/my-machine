@@ -46,6 +46,10 @@ if [[ $OSTYPE == darwin* ]]; then
   }
 fi
 
+## Change Directory Shortcuts (path definitions in ._ file)
+alias ,cd_devLocal="cd devLocal"
+alias ,cd_jupLocal="cd jupLocal"
+
 ## commands with my preferred flags
 alias .=source
 alias black="~/.venv/.linters/bin/cblack --line-length=99"

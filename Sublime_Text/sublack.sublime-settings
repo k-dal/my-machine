@@ -1,4 +1,4 @@
 {
     "black_command": "~/.venv/.linters/bin/cblack",
-    "black_line_length": 99
+    "black_line_length": 111
 }
