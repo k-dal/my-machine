@@ -1,8 +1,6 @@
 [flake8]
 extend-ignore = C812,
                   # -(( C812 ))- Missing trailing comma - ignored because Black is making these decisions
-                D101,
-                  # -(( D101 ))- Missing Docstring in Public Class
                 E111,
                   # -(( E111 ))- Indentation is not a multiple of four
                 E203,
@@ -25,8 +23,12 @@ extend-ignore = C812,
                   # -(( W503 ))- Line break before binary operator
                   # This one conflicts with modern PEP-8. It'll eventually be fixed, but for now
                   # it's simplest to ignore it.
-                WPS305
+                WPS305,
                   # -(( WPS305 ))- Found 'f' string - uh yea, because they're great...
+                WPS306,
+                  # -(( WPS306 ))- Found class without a base class - this is outdated.
+                WPS411
+                  # -(( WPS411 ))- Found empty module - this is an erroneous warning... unclear why it happens.
 
 import-order-style = spoqa
 indent-size = 2
