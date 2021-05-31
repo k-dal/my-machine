@@ -43,7 +43,7 @@ spelling-ignore-words=dalias,
                       snp
 
 [MISCELLANEOUS]
-# List of note tags to take in consideration, separated by a comma.
+# List of note/code tags to take in consideration, separated by a comma.
 notes=BUG,
       CAVEAT,
       CRED,
@@ -56,6 +56,7 @@ notes=BUG,
       NEEDSDOC,
       NEXT,
       NOTE,
+      QQ,
       QUESTION,
       REQ,
       SEE,
