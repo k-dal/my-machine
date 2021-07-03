@@ -1,0 +1,127 @@
+[
+  {
+    "settings": {
+      "openEditInWindow": true,
+      "openEditInWindow.popup": false,
+      "windowPosition": {},
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "newStyleAsUsercss": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "config.autosave": true,
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false,
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findStylesInline": true,
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": null,
+      "editor.selectByTokens": true,
+      "editor.appliesToLineWidget": true,
+      "editor.livePreview": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": 0,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "popupWidth": 246,
+      "updateInterval": 24
+    }
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1615445857878,
+    "name": "Anvil IDE & Start Page Enhancements",
+    "sections": [
+      {
+        "code": "/* URLs Starting With: https://anvil.works/build# */\nbody {\n    font-size: 12px;\n    line-height: 1.3;\n}\n\ndiv h2 {\n    display: none;\n}\n\n.CodeMirror pre {\n    font-family: 'Office Code Pro D', monospace;\n    font-size: 12px;\n    line-height: 1.3;\n}\n\n.actions-list {\n    display: none;\n}\n\n.create-app {\n    display: none;\n}\n\n.ide-main-panel {\n    padding: 0px;\n}\n\n.ide-main-panel.with-sidebar {\n    left: 25%;\n}\n\n.learn-to-use {\n    display: none;\n}\n\n.page-container {\n    padding: 0px;\n    top: 55px;\n}\n\n.panel-title {\n    font-size: 14px;\n}\n\n[app-browser] {\n    width: 25%;\n    padding: 0px;\n}\n\n[form-editor]:not(.full-screen) .main-panel {\n    padding-right: 0px;\n    right: 30%;\n}\n\n[form-editor]:not(.full-screen) .anvil-right-column-scroller {\n    padding-left: 0px;\n    left: 70%;\n    width: 30%;\n}",
+        "urlPrefixes": [
+          "https://anvil.works/build#"
+        ]
+      },
+      {
+        "code": ".CodeMirror pre, .CodeMirror-linenumber, div[class^='CodeMirror-gutter'] {\n    font-family: 'Office Code Pro D', monospace;\n    font-size: 12px;\n    line-height: 1.4;\n}\n\n/* Dark Theme Mods for PrivBeta \ndiv[class^='makeStyles-sectionHeader'],\ndiv[class^='makeStyles-description'],\ndiv[class^='makeStyles-root'] {\n    color: #555555;\n}\n\ndiv[class^='makeStyles-alert'] {\n    color: #FF0000;\n}\n\ndiv[class^='makeStyles-commit'] {\n    color: #DEDEDE;\n}\n\n.server-module .CodeMirror {\n    background: #1D1D1D !important;\n}\n*/",
+        "urlPrefixes": [
+          "https://anvil.works/new-build"
+        ]
+      }
+    ],
+    "updateDate": 1624052446886,
+    "_id": "412c198e-e8a6-4b70-a626-349559fa5bc1",
+    "_rev": 1625075679737,
+    "id": 1
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1620267270242,
+    "name": "deprocrastination.co",
+    "sections": [
+      {
+        "code": ".done-reading-box {\n    display: none;\n}",
+        "domains": [
+          "deprocrastination.co"
+        ]
+      }
+    ],
+    "updateDate": 1620267270242,
+    "_id": "12e30886-e66f-4405-b4b4-13f9cb46c750",
+    "_rev": 1620267270243,
+    "id": 3
+  }
+]
