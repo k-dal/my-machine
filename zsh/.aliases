@@ -72,14 +72,17 @@ alias suuidgen="~/.venv/.zsh/bin/python -c 'from shortuuid import uuid; print(uu
 alias suuid="suuidgen cat-scopy"
 
 ## timers courtesy of termdown
-alias termdown="~/.venv/.zsh/bin/termdown -b -c 10 -f roman -q 3 -t \"D I N G
+alias termdown-stopwatch="~/.venv/.zsh/bin/termdown -f roman"
+alias ,stopwatch=termdown-stopwatch
+alias termdown-timer="~/.venv/.zsh/bin/termdown -b -c 10 -f roman -t \"D I N G
       A
 L I N G\" -v Alex"
+alias ,timer=termdown-timer
 timer() {
-    termdown $1 && ,send_system_notification "Timer Complete" "Total Runtime: $1"
+    termdown-timer -q 3 $1 && ,send_system_notification "Timer Complete" "Total Runtime: $1"
 }
 ttimer() {
-    termdown -T $1 $2 && ,send_system_notification $1 "Total Runtime: $2"
+    termdown-timer -q 3 -T $1 $2 && ,send_system_notification $1 "Total Runtime: $2"
 }
 
 ## send an arbitrary system notification
