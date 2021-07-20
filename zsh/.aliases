@@ -74,15 +74,17 @@ alias suuid="suuidgen cat-scopy"
 ## timers courtesy of termdown
 alias termdown-stopwatch="~/.venv/.zsh/bin/termdown -f roman"
 alias ,stopwatch=termdown-stopwatch
+alias ,stopwatch-with-title=",stopwatch -T"
 alias termdown-timer="~/.venv/.zsh/bin/termdown -b -c 10 -f roman -t \"D I N G
       A
 L I N G\" -v Alex"
 alias ,timer=termdown-timer
+alias ,timer-with-title="termdown-timer -T"
 timer() {
-    termdown-timer -q 3 $1 && ,send_system_notification "Timer Complete" "Total Runtime: $1"
+    ,timer -q 3 $1 && ,send_system_notification "Timer Complete" "Total Runtime: $1"
 }
 ttimer() {
-    termdown-timer -q 3 -T $1 $2 && ,send_system_notification $1 "Total Runtime: $2"
+    ,timer-with-title $1 -q 3 $2 && ,send_system_notification $1 "Total Runtime: $2"
 }
 
 ## send an arbitrary system notification
