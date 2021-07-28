@@ -50,6 +50,7 @@ alias ,cd_jupLocal="cd jupLocal"
 
 ## commands with my preferred flags
 alias .=source
+alias op="open ."
 alias black="~/.venv/.linters/bin/cblack --line-length=99"
 alias blk=black
 alias blk_check="blk --check"

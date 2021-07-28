@@ -18,7 +18,7 @@ disable = C0114,
 [FORMAT]
 # indent-after-paren = 4
 indent-string = "  "
-max-line-length = 119
+max-line-length = 121
 
 [BASIC]
 # Good variable names which should always be accepted, separated by a comma.
