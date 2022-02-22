@@ -7,14 +7,14 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 # primary prompt
 ### [Reference]-KD Preferred Symbols: ∈∋ ⫷⫸
-PROMPT='$FG[236]%~ %{$reset_color%}∈\
+PROMPT='$FG[242]%c%{$reset_color%}\
 $(git_prompt_info)$(hg_prompt_info)\
-$FG[246]∋ $FG[226]%(!.#.#)%{$reset_color%} '
+$FG[246]$FG[226]/%(!.#.#)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
 
 # color vars
-eval my_gray='$FG[236]'
+eval my_gray='$FG[242]'
 eval my_orange='$FG[214]'
 
 # right prompt
