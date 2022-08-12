@@ -68,6 +68,7 @@ alias pipreq="pip install --force-reinstall --requirement"
 alias pips="pip show"
 alias pipun="pip uninstall --yes"
 alias pipup="pip install --upgrade"
+alias wod="workon data"
 
 ## get current ip address info
 alias ipinfo="echo && curl ipinfo.io && echo && echo"
