@@ -7,7 +7,7 @@ source $HOME/.pyenv/versions/$($VIRTUALENVWRAPPER_PYTHON -V 2>&1 | cut -d' ' -f2
 
 ## When possible, use Sublime Text as the editor for commands that prompt for input.
 ## see: https://www.sublimetext.com/docs/3/osx_command_line.html
-export EDITOR='subl -w'
+export EDITOR='code -w'
 
 eval $(/opt/homebrew/bin/brew shellenv)
 

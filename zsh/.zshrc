@@ -98,8 +98,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate $HOME/.zshrc"
 # alias ohmyzsh="mate $HOME/.oh-my-zsh"
 
+## public aliases
+source $HOME/.aliases
+
+## private aliases
+source $HOME/._aliases
+
+## kd-air env vars
+source $HOME/._k-dal-env
+
 # #### pyenv begin #### #
 eval "$(pyenv init --path)"
 # ####  pyenv end  #### #
-
-source $HOME/.aliases
