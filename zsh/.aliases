@@ -69,7 +69,7 @@ alias pips="pip show"
 alias pipun="pip uninstall --yes"
 alias pipup="pip install --upgrade"
 alias wod="workon data"
-alias ipython="wod && ipython && deactivate"
+alias ipython="wod && ipython"
 
 
 ## get current ip address info
