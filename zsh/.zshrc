@@ -107,6 +107,5 @@ source $HOME/._aliases
 ## kd-air env vars
 source $HOME/._k-dal-env
 
-# #### pyenv begin #### #
 eval "$(pyenv init --path)"
-# ####  pyenv end  #### #
+eval "$(direnv hook zsh)"
